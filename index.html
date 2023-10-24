@@ -1,0 +1,1561 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza da Salvatore</title>
+
+    <! -- primery meta tag -- >
+
+    <meta name="title" content="Pizza da Salvatore" />
+    <meta name="descriptions" content="Это страница ресторана" />
+
+    <! -- favicon -- >
+
+    <link rel="shortrut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <! -- google font link -- >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+      rel="stylesheet" />
+
+    <! -- castom css link  -- >
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <! -- preload images  -- >
+
+    <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg" />
+  </head>
+
+  <body id="top">
+    <! -- PRELOADER  -- >
+
+    <div class="preload" data-preaload>
+      <div class="circle"></div>
+      <p class="text">Pizza da Salvatore</p>
+    </div>
+
+    <! -- TOP BAR -- >
+
+    <div class="topbar">
+      <div class="container">
+        <a href="https://yandex.ru/maps/-/CDa0IILS" class="topbar-item link">
+          <div class="icon">
+            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span">
+            Гостенская улица, дом 16, г. Белгород, 308015</span
+          >
+        </a>
+
+        <div class="separator"></div>
+
+        <div class="topbar-item item-2">
+          <div class="icon">
+            <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span"> Вс-Чт 11.00 - 22.00 Пт-Сб 11.00 - 23.00</span>
+        </div>
+
+        <a href="tel:+79092042233" class="topbar-item link">
+          <div class="icon">
+            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+          </div>
+          <span class="span">+7 (909) 204-22-33</span>
+        </a>
+
+        <a href="https://vk.com/pizza_da_salvatore" class="topbar-item link">
+          <div class="icon">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+          </div>
+          <span class="span">@Pizza_da_Salvatore</span>
+        </a>
+      </div>
+    </div>
+
+    <! -- HEADER -- >
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="./assets/images/logo.svg"
+            width="160"
+            height="50"
+            alt="Pizza - Home" />
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <button class="close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+          <a href="#home" class="logo">
+            <img
+              src="./assets/images/logo.svg"
+              width="160"
+              height="50"
+              alt="Pizza - Home" />
+          </a>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link hover-underline">
+                <div class="separator"></div>
+                <span class="span">Главная</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#spehcial" class="navbar-link hover-underline">
+                <div class="separator"></div>
+                <span class="span">Меню</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#service" class="navbar-link hover-underline">
+                <div class="separator"></div>
+                <span class="span">О нас</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#about" class="navbar-link hover-underline">
+                <div class="separator"></div>
+                <span class="span">История</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#contact" class="navbar-link hover-underline">
+                <div class="separator"></div>
+                <span class="span">Контакты</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="text-center">
+            <p class="headline-1 navbar-title">Приходите к нам</p>
+
+            <address class="body-4">
+              Гостенская улица, дом 16 <br />
+              г. Белгород, 308015
+            </address>
+
+            <p class="body-4 navbar-text">
+              Вс-Чт 11.00 - 22.00 <br />
+              Пт-Сб 11.00 - 23.00
+            </p>
+
+            <a
+              href="https://vk.com/pizza_da_salvatore"
+              class="sidebar-link body-4"
+              >@pizza_da_salvatore</a
+            >
+
+            <div class="separator"></div>
+
+            <p class="contact-label">Запрос Бронирования</p>
+
+            <a
+              href="tel:+79092042233"
+              class="body-1 contact-number hover-underline">
+              +7(909)204-22-33
+            </a>
+          </div>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <! -- #HERO -- >
+
+        <section class="hero text-center" aria-label="home" id="home">
+          <ul class="hero-slider" data-hero-slider>
+            <li class="slider-item active" data-hero-slider-item>
+              <div class="slider-bg">
+                <img
+                  src="./assets/images/hero-slider-1.jpg"
+                  width="1880"
+                  height="950"
+                  alt=""
+                  class="img-cover" />
+              </div>
+
+              <p class="label-2 section-subtitle slider-reveal">
+                Итальянская кухня
+              </p>
+
+              <h1 class="display-1 hero-title slider-reveal">
+                Любовь к <br />
+                вкусной еде
+              </h1>
+              <p class="body-2 hero-text slider-reveal">
+                Приходите всей семьей и почувствовуйте радость от вкусной еды
+              </p>
+              <a href="#menu" class="btn btn-primery slider-reveal">
+                <span class="text text-1">Посмотрите Меню</span>
+                <span class="text text-2" aria-hidden="true"
+                  >Посмотрите Меню</span
+                >
+              </a>
+            </li>
+
+            <li class="slider-item" data-hero-slider-item>
+              <div class="slider-bg">
+                <img
+                  src="./assets/images/hero-slider-2.jpg"
+                  width="1880"
+                  height="950"
+                  alt=""
+                  class="img-cover" />
+              </div>
+
+              <p class="label-2 section-subtitle slider-reveal">
+                Яркие впечатления
+              </p>
+
+              <h1 class="display-1 hero-title slider-reveal">
+                Рецепты, передаваемые <br />
+                целыми поколениями
+              </h1>
+              <p class="body-2 hero-text slider-reveal">
+                Приводите друзей и испытайте новые эмоции от яркой еды
+              </p>
+              <a href="#menu" class="btn btn-primary slider-reveal">
+                <span class="text text-1">Посмотрите меню</span>
+                <span class="text text-2" aria-hidden="true"
+                  >Посмотрите меню</span
+                >
+              </a>
+            </li>
+
+            <li class="slider-item" data-hero-slider-item>
+              <div class="slider-bg">
+                <img
+                  src="./assets/images/hero-slider-3.jpg"
+                  width="1880"
+                  height="950"
+                  alt=""
+                  class="img-cover" />
+              </div>
+
+              <p class="label-2 section-subtitle slider-reveal">
+                Потрясающе вкусно
+              </p>
+
+              <h1 class="display-1 hero-title slider-reveal">
+                Где каждый вкус<br />
+                рассказывает историю
+              </h1>
+              <p class="body-2 hero-text slider-reveal">
+                Проведите романтический вечер вдвоем и создайте теплые
+                воспоминания
+              </p>
+              <a href="#menu" class="btn btn-primary slider-reveal">
+                <span class="text text-1">Посмотрите Меню</span>
+                <span class="text text-2" aria-hidden="true"
+                  >Посмотрите Меню</span
+                >
+              </a>
+            </li>
+          </ul>
+
+          <button
+            class="slider-btn prev"
+            aria-label="slide to previous"
+            data-prev-btn>
+            <ion-icon name="chevron-back"></ion-icon>
+          </button>
+
+          <button
+            class="slider-btn next"
+            aria-label="slide to next"
+            data-next-btn>
+            <ion-icon name="chevron-forward"></ion-icon>
+          </button>
+
+          <a href="#reservation" class="hero-btn has-after">
+            <img
+              src="./assets/images/hero-icon.png"
+              width="48"
+              height="48"
+              alt="booking icon" />
+
+            <span class="label-2 text-center span">Столик</span>
+          </a>
+        </section>
+
+        <! -- #SERVICE -- >
+
+        <section
+          id="service"
+          class="section service bg-black-10 text-center"
+          aria-label="service">
+          <div class="container">
+            <p class="section-subtitle label-2">Дарим эмоции</p>
+
+            <h2 class="headline-1 section-title">
+              Мы предлагаем вам уютную атмосферу
+            </h2>
+            <p class="section-text">
+              В нашем заведении вы сможете насладиться прекрасной атмосферой и
+              великолепной кухней! Распробуйте насыщеный вкус Итальянской кухни,
+              оцените разнообразие блюд под лучшие песни самых известных
+              итальянских исполнителей. Представьте, что вы очутились в
+              маленькой Италии.
+            </p>
+
+            <ul class="grid-list">
+              <li>
+                <div class="service-card">
+                  <a href="#" class="has-before hover:shine">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 285; --height: 336">
+                      <img
+                        src="./assets/images/panoram-1.png"
+                        width="285"
+                        height="336"
+                        loading="lazy"
+                        alt="Breakfast"
+                        class="img-cover" />
+                    </figure>
+                  </a>
+
+                  <div class="card-content">
+                    <h3 class="title-4 card-title">
+                      <a href="#">Делитесь впечатлениями с миром</a>
+                    </h3>
+
+                    <a href="#" class="btn-text hover-underline label-2"
+                      >меню</a
+                    >
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <a href="#" class="has-before hover:shine">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 285; --height: 336">
+                      <img
+                        src="./assets/images/panoram-2.png"
+                        width="285"
+                        height="336"
+                        loading="lazy"
+                        alt="Breakfast"
+                        class="img-cover" />
+                    </figure>
+                  </a>
+
+                  <div class="card-content">
+                    <h3 class="title-4 card-title">
+                      <a href="#">Наблюдайте за работой Шефа</a>
+                    </h3>
+
+                    <a href="#" class="btn-text hover-underline label-2"
+                      >меню</a
+                    >
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <a href="#" class="has-before hover:shine">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 285; --height: 336">
+                      <img
+                        src="./assets/images/panoram-3.png"
+                        width="285"
+                        height="336"
+                        loading="lazy"
+                        alt="Breakfast"
+                        class="img-cover" />
+                    </figure>
+                  </a>
+
+                  <div class="card-content">
+                    <h3 class="title-4 card-title">
+                      <a href="#">Наслаждайтесь вкусной едой</a>
+                    </h3>
+
+                    <a href="#" class="btn-text hover-underline label-2"
+                      >меню</a
+                    >
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <img
+              src="./assets/images/shape-1.png"
+              width="246"
+              height="412"
+              loading="lazy"
+              alt="shape"
+              class="shape shape-1 move-anim" />
+
+            <img
+              src="./assets/images/shape-2.png"
+              width="343"
+              height="345"
+              loading="lazy"
+              alt="shape"
+              class="shape shape-2 move-anim" />
+          </div>
+        </section>
+
+        <! -- #ABOUT -- >
+
+        <section
+          class="section about text-center"
+          aria-labelledby="about-label"
+          id="about">
+          <div class="container">
+            <div class="about-content">
+              <p class="label-2 section-subtitle" id="about-label">
+                Наша история
+              </p>
+
+              <h2 class="headline-1 section-title">
+                За каждым блюдом стоит своя удивительная история
+              </h2>
+              <p class="section-text">
+                Однажды, мы прилетели навестить родных и застряли в России из-за
+                пандемии. Спустя год, стало ясно - многие Белгородцы никогда не
+                пробовали настоящей, итальянской еды. Так началась большая
+                стройка маленького итальянского кафе. Меня зовут Юля. Родилась в
+                31-м регионе, а родители до сих пор живут в Шебекинском районе.
+                Я и Сальваторе вместе, ровно столько - сколько лет нашей собаке.
+                Пса, иногда можно встретить в сторис. Совершенно очаровательный,
+                пяти с хвостиком лет, по кличке Игорь. Сальваторе сицилиец. Пока
+                не выучил русский, поэтому чаще всего именно я, говорю вместо
+                него. Давно работает в сфере гостеприимства. Кулинария - это
+                страсть и стиль жизни. Учился готовить у поваров - обладателей
+                звёзд Мишлен. Участвовал в паре кулинарных шоу на TV. И открыл
+                несколько ресторанов по всему Миру. Итальянское кафе «Pizza da
+                Salvatore» - это про уют и семью. Традиционные итальянские
+                рецепты. Так же как и много лет назад готовила бабушка Роза,
+                где-то на юге Италии.
+              </p>
+
+              <div class="contact-label">Звоните и приходите, мы вас ждем!</div>
+              <a
+                href="tel:+79092042233"
+                class="body-1 contact-number hover-underline"
+                >+7 (909) 204-22-33</a
+              >
+
+              <a
+                href="https://vk.com/pizza_da_salvatore"
+                class="btn btn-primary">
+                <span class="text text-1">Узнать о нас больше</span>
+
+                <span class="text text-2" aria-hidden="true"
+                  >Узнать о нас больше</span
+                >
+              </a>
+            </div>
+
+            <figure class="about-banner">
+              <img
+                src="./assets/images/pizza-da-salvatore-wood.png"
+                width="570"
+                height="570"
+                loading="lazy"
+                alt="about banner"
+                class="w-100"
+                data-parallax-item
+                data-parallax-speed="1" />
+
+              <div
+                class="abs-img abs-img-1 has-before"
+                data-parallax-item
+                data-parallax-speed="1.75">
+                <img
+                  src="./assets/images/pizza-shef.png"
+                  width="285"
+                  height="285"
+                  loading="lazy"
+                  alt=""
+                  class="w-100" />
+              </div>
+
+              <div class="abs-img abs-img-2 has-before">
+                <img
+                  src="./assets/images/badge-2.png"
+                  width="133"
+                  height="134"
+                  loading="lazy"
+                  alt="" />
+              </div>
+            </figure>
+
+            <img
+              src="./assets/images/shape-3.png"
+              width="197"
+              height="194"
+              loading="lazy"
+              alt=""
+              class="shape" />
+          </div>
+        </section>
+
+        <! -- #SPECIAL DISH -- >
+
+        <section
+          id="spehcial"
+          class="special-dish text-center"
+          aria-labelledby="dish-label">
+          <div class="special-dish-banner">
+            <img
+              src="./assets/images/special-dish.png"
+              width="940"
+              height="900"
+              loading="lazy"
+              alt="special dish"
+              class="img-cover" />
+          </div>
+
+          <div class="special-dish-content bg-black-10">
+            <div class="container">
+              <img
+                src="./assets/images/badge-1.png"
+                width="28"
+                height="41"
+                loading="lazy"
+                alt="badge"
+                class="abs-img" />
+              <p class="section-subtitle label-2">Особое блюдо</p>
+              <h2 class="headline-1 section-title">Сюрприз от Salvatore</h2>
+
+              <p class="section-text">
+                Наш Шэфповар спросит вас об ваших предпочтениях и пищевых
+                привычках и приготовит гастрономический шедевр, по собственному
+                уникальному рецепту специально для вас.
+              </p>
+
+              <div class="wrapper">
+                <del class="del body-3">Цена от</del>
+                <span class="span body-1">500 ₽</span>
+              </div>
+
+              <a href="#menu" class="btn btn-primary">
+                <span class="text text-1">Посмотреть Меню</span>
+                <span class="text text-2" aria-hidden="true"
+                  >Посмотреть Меню</span
+                >
+              </a>
+            </div>
+          </div>
+
+          <img
+            src="./assets/images/shape-4.png"
+            width="179"
+            height="359"
+            loading="lazy"
+            alt=""
+            class="shape shape-1" />
+          <img
+            src="./assets/images/shape-9.png"
+            width="151"
+            height="92"
+            loading="lazy"
+            alt=""
+            class="shape shape-2" />
+        </section>
+
+        <! -- #MENU -- >
+
+        <section class="section menu" aria-label="menu-label" id="menu">
+          <div class="container">
+            <p class="section-subtitle text-center label-2">
+              Специальная секция
+            </p>
+
+            <h2 class="headline-1 section-title text-center">Вкусное Меню</h2>
+
+            <ul class="grid-list">
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100">
+                    <img
+                      src="./assets/images/kaprichoze.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover" />
+                  </figure>
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Пицца</a>
+                      </h3>
+                      <span class="span title-2">450₽</span>
+                    </div>
+                    <p class="card-text label-1">
+                      Овощи, сыры, мясной фарш, томатный соус, приправы и специи
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100">
+                    <img
+                      src="./assets/images/kaprichoze.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover" />
+                  </figure>
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Пицца</a>
+                      </h3>
+                      <span class="span title-2">450₽</span>
+                    </div>
+                    <p class="card-text label-1">
+                      Овощи, сыры, мясной фарш, томатный соус, приправы и специи
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100">
+                    <img
+                      src="./assets/images/kaprichoze.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover" />
+                  </figure>
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Пицца</a>
+                      </h3>
+                      <span class="span title-2">450₽</span>
+                    </div>
+                    <p class="card-text label-1">
+                      Овощи, сыры, мясной фарш, томатный соус, приправы и специи
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100">
+                    <img
+                      src="./assets/images/kaprichoze.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover" />
+                  </figure>
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Пицца</a>
+                      </h3>
+                      <span class="span title-2">450₽</span>
+                    </div>
+                    <p class="card-text label-1">
+                      Овощи, сыры, мясной фарш, томатный соус, приправы и специи
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100">
+                    <img
+                      src="./assets/images/kaprichoze.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover" />
+                  </figure>
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Пицца</a>
+                      </h3>
+                      <span class="span title-2">450₽</span>
+                    </div>
+                    <p class="card-text label-1">
+                      Овощи, сыры, мясной фарш, томатный соус, приправы и специи
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100">
+                    <img
+                      src="./assets/images/kaprichoze.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover" />
+                  </figure>
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Пицца</a>
+                      </h3>
+                      <span class="span title-2">450₽</span>
+                    </div>
+                    <p class="card-text label-1">
+                      Овощи, сыры, мясной фарш, томатный соус, приправы и специи
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100">
+                    <img
+                      src="./assets/images/kaprichoze.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover" />
+                  </figure>
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Пицца</a>
+                      </h3>
+                      <span class="span title-2">450₽</span>
+                    </div>
+                    <p class="card-text label-1">
+                      Овощи, сыры, мясной фарш, томатный соус, приправы и специи
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100">
+                    <img
+                      src="./assets/images/kaprichoze.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover" />
+                  </figure>
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Пицца</a>
+                      </h3>
+                      <span class="span title-2">450₽</span>
+                    </div>
+                    <p class="card-text label-1">
+                      Овощи, сыры, мясной фарш, томатный соус, приправы и специи
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100">
+                    <img
+                      src="./assets/images/kaprichoze.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover" />
+                  </figure>
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Пицца</a>
+                      </h3>
+                      <span class="span title-2">450₽</span>
+                    </div>
+                    <p class="card-text label-1">
+                      Овощи, сыры, мясной фарш, томатный соус, приправы и специи
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100">
+                    <img
+                      src="./assets/images/kaprichoze.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover" />
+                  </figure>
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Пицца</a>
+                      </h3>
+                      <span class="span title-2">450₽</span>
+                    </div>
+                    <p class="card-text label-1">
+                      Овощи, сыры, мясной фарш, томатный соус, приправы и специи
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100">
+                    <img
+                      src="./assets/images/kaprichoze.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover" />
+                  </figure>
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Пицца</a>
+                      </h3>
+                      <span class="span title-2">450₽</span>
+                    </div>
+                    <p class="card-text label-1">
+                      Овощи, сыры, мясной фарш, томатный соус, приправы и специи
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100">
+                    <img
+                      src="./assets/images/kaprichoze.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover" />
+                  </figure>
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Пицца</a>
+                      </h3>
+                      <span class="span title-2">450₽</span>
+                    </div>
+                    <p class="card-text label-1">
+                      Овощи, сыры, мясной фарш, томатный соус, приправы и специи
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100">
+                    <img
+                      src="./assets/images/kaprichoze.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover" />
+                  </figure>
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Пицца</a>
+                      </h3>
+                      <span class="span title-2">450₽</span>
+                    </div>
+                    <p class="card-text label-1">
+                      Овощи, сыры, мясной фарш, томатный соус, приправы и специи
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100">
+                    <img
+                      src="./assets/images/kaprichoze.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover" />
+                  </figure>
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Пицца</a>
+                      </h3>
+                      <span class="span title-2">450₽</span>
+                    </div>
+                    <p class="card-text label-1">
+                      Овощи, сыры, мясной фарш, томатный соус, приправы и специи
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100">
+                    <img
+                      src="./assets/images/kaprichoze.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover" />
+                  </figure>
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Пицца</a>
+                      </h3>
+                      <span class="span title-2">450₽</span>
+                    </div>
+                    <p class="card-text label-1">
+                      Овощи, сыры, мясной фарш, томатный соус, приправы и специи
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100">
+                    <img
+                      src="./assets/images/kaprichoze.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover" />
+                  </figure>
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Пицца</a>
+                      </h3>
+                      <span class="span title-2">450₽</span>
+                    </div>
+                    <p class="card-text label-1">
+                      Овощи, сыры, мясной фарш, томатный соус, приправы и специи
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100">
+                    <img
+                      src="./assets/images/kaprichoze.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover" />
+                  </figure>
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Пицца</a>
+                      </h3>
+                      <span class="span title-2">450₽</span>
+                    </div>
+                    <p class="card-text label-1">
+                      Овощи, сыры, мясной фарш, томатный соус, приправы и специи
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100">
+                    <img
+                      src="./assets/images/kaprichoze.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover" />
+                  </figure>
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Пицца</a>
+                      </h3>
+                      <span class="span title-2">450₽</span>
+                    </div>
+                    <p class="card-text label-1">
+                      Овощи, сыры, мясной фарш, томатный соус, приправы и специи
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100">
+                    <img
+                      src="./assets/images/kaprichoze.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover" />
+                  </figure>
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Пицца</a>
+                      </h3>
+                      <span class="span title-2">450₽</span>
+                    </div>
+                    <p class="card-text label-1">
+                      Овощи, сыры, мясной фарш, томатный соус, приправы и специи
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100">
+                    <img
+                      src="./assets/images/kaprichoze.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover" />
+                  </figure>
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Пицца</a>
+                      </h3>
+                      <span class="span title-2">450₽</span>
+                    </div>
+                    <p class="card-text label-1">
+                      Овощи, сыры, мясной фарш, томатный соус, приправы и специи
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <p class="menu-text text-center">
+              Режим работы:<br />
+              Вс - Чт: <span class="span">11.00 - 22.00 </span><br />
+              Пт - Сб: <span class="span">11.00 - 23.00</span>
+            </p>
+
+            <a href="#" class="btn btn-primary">
+              <span class="text text-1">Меню</span>
+              <span class="text text-2" aria-hidden="true">Меню</span>
+            </a>
+
+            <img
+              src="./assets/images/shape-5.png"
+              width="921"
+              height="1036"
+              loading="lazy"
+              alt="shape"
+              class="shape shape-2 move-anim" />
+            <img
+              src="./assets/images/shape-6.png"
+              width="343"
+              height="345"
+              loading="lazy"
+              alt="shape"
+              class="shape shape-3 move-anim" />
+          </div>
+        </section>
+
+        <! -- #TESTIMONIALS -- >
+
+        <section
+          class="section testi text-center has-bg-image"
+          style="background-image: url('./assets/images/testimonial-bg.jpg')"
+          aria-label="testimonials">
+          <div class="container">
+            <div class="quote">”</div>
+            <p class="headline-2 testi-text"></p>
+            <div class="wrapper">
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+            </div>
+            <!-- <div class="profile">
+              <img
+                src="./assets/images/testi-avatar.jpg"
+                width="100"
+                height="100"
+                loading="lazy"
+                alt="Sam Jhonson"
+                class="img" />
+              <p class="label-2 profile-name">Дон бидон</p>
+            </div>
+            -->
+          </div>
+        </section>
+
+        <! -- #RESERVATION -- >
+
+        <section id="reservation" class="reservation">
+          <div class="container">
+            <div class="form reservation-form bg-black-10">
+              <!--
+              <form action="" class="form-left">
+                <h2 class="headline-1 text-center">Онлайн Резервация</h2>
+
+                <p class="form-text text-center">
+                  Запрос Бронирования
+                  <a href="tel:+79092042233" class="link"> +7 (909) 204-22-33</a>
+                  или заполните форму
+                </p>
+
+                <div class="input-wrapper">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Ваше имя"
+                    autocomplete="off"
+                    class="input-field" />
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Ваш номер"
+                    autocomplete="off"
+                    class="input-field" />
+                </div>
+
+                <div class="input-wrapper">
+                  <div class="icon-wrapper">
+                    <ion-icon
+                      name="person-outline"
+                      aria-hidden="true"></ion-icon>
+                    <select name="person" class="input-field">
+                      <option value="1-person">1 Персона</option>
+                      <option value="2-person">2 Персоны</option>
+                      <option value="3-person">3 Персоны</option>
+                      <option value="4-person">4 Персоны</option>
+                      <option value="5-person">5 Персон</option>
+                      <option value="6-person">6 Персон</option>
+                      <option value="7-person">7 Персон</option>
+                    </select>
+                    <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <div class="icon-wrapper">
+                    <ion-icon
+                      name="calendar-clear-outline"
+                      aria-hidden="true"></ion-icon>
+
+                    <input
+                      type="date"
+                      name="reservation-date"
+                      class="input-field" />
+
+                    <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <div class="icon-wrapper">
+                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                    <select name="person" class="input-field">
+                      <option value="11:00">11 : 00</option>
+                      <option value="12:00">12 : 00</option>
+                      <option value="13:00">13 : 00</option>
+                      <option value="14:00">14 : 00</option>
+                      <option value="15:00">15 : 00</option>
+                      <option value="16:00">16 : 00</option>
+                      <option value="17:00">17 : 00</option>
+                      <option value="18:00">18 : 00</option>
+                      <option value="19:00">19 : 00</option>
+                      <option value="20:00">20 : 00</option>
+                      <option value="21:00">21 : 00</option>
+                      <option value="22:00">22 : 00</option>
+                    </select>
+
+                    <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                  </div>
+                </div>
+
+                <textarea
+                  name="message"
+                  placeholder="Message"
+                  autocomplete="off"
+                  class="input-field">
+                </textarea>
+
+                <button type="submit" class="btn btn-secondary">
+                  <span class="text text-1">Бронь столика</span>
+
+                  <span class="text text-2" aria-hidden="true"
+                    >Бронь столика</span
+                  >
+                </button>
+              </form>
+              -->
+              <div
+                class="form-left text-center"
+                style="
+                  background-image: url('./assets/images/form-pattern.png');
+                ">
+                <h2 class="headline-1">Наши контакты</h2>
+                <p class="contact-label">Связь с нами</p>
+                <a
+                  href="tel:+79092042233"
+                  class="body-1 contact-number hover-underline"
+                  >+7(909)204-22-33</a
+                >
+
+                <p class="contact-label">Локация</p>
+                <address class="body-4">
+                  Гостенская улица, дом 16, г.<br />
+                  Белгород, 308015
+                </address>
+
+                <p class="contact-label">Время работы</p>
+                <p class="body-q">
+                  Вс-Чт 11.00 - 22.00 <br />
+                  Пт-Сб 11.00 - 23.00
+                </p>
+              </div>
+
+              <div class="form-right text-center">
+                <p class="contact-label headline-2 contact-number">
+                  Звоните и мы забронируем за вами столик
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <! -- #FEATURES -- >
+
+        <section class="section features text-center" aria-label="features">
+          <div class="container">
+            <p class="section-subtitle label-2">Почему выбрают нас</p>
+
+            <h2 class="headline-1 section-title">Наши приемущества</h2>
+
+            <ul class="grid-list">
+              <li class="feature-item">
+                <div class="feature-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/features-icon-1.png"
+                      width="100"
+                      height="80"
+                      loading="lazy"
+                      alt="icon" />
+                  </div>
+
+                  <h3 class="title-2 card-title">Самые свежие продукты</h3>
+
+                  <p class="label-1 card-text">
+                    Мы готовим из самых свежих продуктов по проверенным
+                    рецептам.
+                  </p>
+                </div>
+              </li>
+
+              <li class="feature-item">
+                <div class="feature-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/features-icon-2.png"
+                      width="100"
+                      height="80"
+                      loading="lazy"
+                      alt="icon" />
+                  </div>
+
+                  <h3 class="title-2 card-title">Уютная атмосфера</h3>
+
+                  <p class="label-1 card-text">
+                    Вкусная еда, хорошие люди и музыка творят чудеса.
+                  </p>
+                </div>
+              </li>
+
+              <li class="feature-item">
+                <div class="feature-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/features-icon-3.png"
+                      width="100"
+                      height="80"
+                      loading="lazy"
+                      alt="icon" />
+                  </div>
+
+                  <h3 class="title-2 card-title">Мастер Шефповар</h3>
+
+                  <p class="label-1 card-text">
+                    Шефповар Сальваторе вкладывает в свое дело душу.
+                  </p>
+                </div>
+              </li>
+
+              <!-- 
+              <li class="feature-item">
+                <div class="feature-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/features-icon-4.png"
+                      width="100"
+                      height="80"
+                      loading="lazy"
+                      alt="icon" />
+                  </div>
+
+                  <h3 class="title-2 card-title">Event & Party</h3>
+
+                  <p class="label-1 card-text">
+                    Lorem Ipsum is simply dummy printing and typesetting.
+                  </p>
+                </div>
+              </li>
+            --></ul>
+
+            <img
+              src="./assets/images/shape-6.png"
+              width="208"
+              hetght-="178"
+              loading="lazy"
+              alt="shape"
+              class="shape shape-1" />
+            <img
+              src="./assets/images/shape-8.png"
+              width="120"
+              height="115"
+              loading="lazy"
+              alt="shape"
+              class="shape shape-2" />
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <! -- #FOOTER  -- >
+
+    <footer
+      id="contact"
+      class="footer section has-bg-image text-center"
+      style="background-image: url('./assets/images/testimonial-bg.jpg')">
+      <div class="container">
+        <div class="footer-top grid-list">
+          <div class="footer-brand has-before has-after">
+            <a href="#" class="logo">
+              <img
+                src="./assets/images/logo.svg"
+                width="160"
+                height="50"
+                loading="Lazy"
+                alt="grilli home" />
+            </a>
+
+            <address class="body-q">
+              Гостенская улица, дом 16, г. Белгород, 308015
+            </address>
+
+            <a
+              href="https://vk.com/pizza_da_salvatore"
+              class="body-4 contact-link"
+              >@pizza_da_salvatore</a
+            >
+
+            <a href="tel:+79092042233" class="body-4 contact-link"
+              >Запрос бронирования +7 (909) 204-22-33</a
+            >
+
+            <p class="body-4">
+              Вс-Чт 11.00 - 22.00 <br />
+              Пт-Сб 11.00 - 23.00
+            </p>
+
+            <div class="wrapper">
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+            </div>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <a
+                href="https://vk.com/pizza_da_salvatore"
+                class="label-2 footer-link hover-underline"
+                >VK</a
+              >
+            </li>
+            <li>
+              <a href="" class="label-2 footer-link hover-underline"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://yandex.ru/maps/-/CDa0MV~T"
+                class="label-2 footer-link hover-underline"
+                >Яндекс Карты</a
+              >
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <a href="#home" class="label-2 footer-link hover-underline"
+                >Главная</a
+              >
+            </li>
+            <li>
+              <a href="#menu" class="label-2 footer-link hover-underline"
+                >Меню</a
+              >
+            </li>
+            <li>
+              <a href="#service" class="label-2 footer-link hover-underline"
+                >О нас</a
+              >
+            </li>
+            <li>
+              <a href="#about" class="label-2 footer-link hover-underline"
+                >История</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="label-2 footer-link hover-underline"
+                >Контакты</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            <a href="#" target="_blank" class="link">nikitaMashn</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <! -- #BACK TO TOP  -- >
+
+    <a
+      href="#top"
+      class="back-top-btn active"
+      aria-label="back to top"
+      data-back-top-btn>
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon
+    ></a>
+
+    <! -- castom js link  -- >
+
+    <script src="./assets/js/script.js"></script>
+
+    <! -- lonicon link  -- >
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
